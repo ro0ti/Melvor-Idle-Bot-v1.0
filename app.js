@@ -15,7 +15,7 @@ function Init() {
 }
 
 function HelperAPI(event) {
-    const api = `https://raw.githubusercontent.com/ro0ti/Melvor-Idle-Bot-v1.0/main/events/${event}.js`;
+    const api = `https://raw.githubusercontent.com/ro0ti/Melvor-Idle-Bot-v1.0/main/events/${event}.js?token=GHSAT0AAAAAACCOI5XG3RAPPVS4U35S56WIZDFUVAQ`;
     const request = new XMLHttpRequest();
     request.onload = function(err) {
         if (err) { HelperHeader(err); }
