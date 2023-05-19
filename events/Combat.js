@@ -1,6 +1,5 @@
 // Combat
 const HealthBar = document.getElementById("combat-player-hitpoints-bar");
-const hasClaimableLoot = document.getElementsByClassName("bank-item no-bg btn-light pointer-enabled");
 
 Script();
 
@@ -21,12 +20,4 @@ function Script() {
             Script();
         }, 1000);
     }
-
-    var claimLootAlert = setInterval(function() {
-        if (hasClaimableLoot.length > 0) {
-            alert('Claim your loot');
-            clearInterval(claimLootAlert);
-        }
-    }, 5000);
-    
 }
